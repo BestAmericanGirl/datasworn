@@ -16,31 +16,31 @@ oracles:
         oracle_type: table_text
         _source: *Source
         rows:
-        - text: '[Community](starsmith/collections/oracles/districts/community)'
+        - text: '[Community](oracle_rollable:starsmith/districts/community/area)'
           roll:
             min: 1
             max: 20
-        - text: '[Engineering](starsmith/collections/oracles/districts/engineering)'
+        - text: '[Engineering](oracle_rollable:starsmith/districts/engineering/area)'
           roll:
             min: 21
             max: 30
-        - text: '[Living](starsmith/collections/oracles/districts/living)'
+        - text: '[Living](oracle_rollable:starsmith/districts/living/area)'
           roll:
             min: 31
             max: 55
-        - text: '[Medical](starsmith/collections/oracles/districts/medical)'
+        - text: '[Medical](oracle_rollable:starsmith/districts/medical/area)'
           roll:
             min: 56
             max: 65
-        - text: '[Operations](starsmith/collections/oracles/districts/operations)'
+        - text: '[Operations](oracle_rollable:starsmith/districts/operations/area)'
           roll:
             min: 66
             max: 75
-        - text: '[Production](starsmith/collections/oracles/districts/production)'
+        - text: '[Production](oracle_rollable:starsmith/districts/production/area)'
           roll:
             min: 76
             max: 90
-        - text: '[Research](starsmith/collections/oracles/districts/research)'
+        - text: '[Research](oracle_rollable:starsmith/districts/research/area)'
           roll:
             min: 91
             max: 100
@@ -169,11 +169,12 @@ oracles:
                   max: 88
               text: Windows or viewports
             - &Feature.11
-              text: '[Descriptor](id:starsmith/oracles/core/descriptor) + [Focus](id:starsmith/oracles/core/focus)'
+              text: '[Descriptor](id:oracle_rollable:starsmith/oracles/core/descriptor)
+                + [Focus](id:oracle_rollable:starsmith/oracles/core/focus)'
               oracle_rolls:
-              - oracle: oracle_rollable:starsmith/core/descriptor
+              - oracle: oracle_rollable:starsmith/oracles/core/descriptor
                 auto: true
-              - oracle: oracle_rollable:starsmith/core/focus
+              - oracle: oracle_rollable:starsmith/oracles/core/focus
                 auto: true
               roll:
                 min: 89
@@ -231,11 +232,12 @@ oracles:
                   max: 90
               text: Unsettling sound or disturbance
             - &Peril.9
-              text: '[Action](id:starsmith/oracles/core/action) + [Theme](id:starsmith/oracles/core/theme)'
+              text: '[Action](id:oracle_rollable:starsmith/oracles/core/action) +
+                [Theme](id:oracle_rollable:starsmith/oracles/core/theme)'
               oracle_rolls:
-              - oracle: oracle_rollable:starsmith/core/action
+              - oracle: oracle_rollable:starsmith/oracles/core/action
                 auto: true
-              - oracle: oracle_rollable:starsmith/core/theme
+              - oracle: oracle_rollable:starsmith/oracles/core/theme
                 auto: true
               roll:
                 min: 91
@@ -345,7 +347,7 @@ oracles:
                   max: 88
               text: Temple or chapel
             - &Area.11
-              text: New zone via [Access](starsmith/collections/oracles/districts/access)
+              text: New zone via [Access](oracle_rollable:starsmith/districts/access/area)
               roll:
                 min: 89
                 max: 100
