@@ -169,12 +169,11 @@ oracles:
                   max: 88
               text: Windows or viewports
             - &Feature.11
-              text: '[Descriptor](id:oracle_rollable:starsmith/oracles/core/descriptor)
-                + [Focus](id:oracle_rollable:starsmith/oracles/core/focus)'
+              text: '[Descriptor](oracle_rollable:starsmith/core/descriptor) + [Focus](oracle_rollable:starsmith/core/focus)'
               oracle_rolls:
-              - oracle: oracle_rollable:starsmith/oracles/core/descriptor
+              - oracle: oracle_rollable:starsmith/core/descriptor
                 auto: true
-              - oracle: oracle_rollable:starsmith/oracles/core/focus
+              - oracle: oracle_rollable:starsmith/core/focus
                 auto: true
               roll:
                 min: 89
@@ -232,12 +231,11 @@ oracles:
                   max: 90
               text: Unsettling sound or disturbance
             - &Peril.9
-              text: '[Action](id:oracle_rollable:starsmith/oracles/core/action) +
-                [Theme](id:oracle_rollable:starsmith/oracles/core/theme)'
+              text: '[Action](oracle_rollable:starsmith/core/action) + [Theme](oracle_rollable:starsmith/core/theme)'
               oracle_rolls:
-              - oracle: oracle_rollable:starsmith/oracles/core/action
+              - oracle: oracle_rollable:starsmith/core/action
                 auto: true
-              - oracle: oracle_rollable:starsmith/oracles/core/theme
+              - oracle: oracle_rollable:starsmith/core/theme
                 auto: true
               roll:
                 min: 91
